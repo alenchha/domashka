@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
+<title>Сайт - Портфолио</title>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1 class="header__logo">главная</h1>
+<div class="header__menu menu">
+<button class="menu__btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+class="bi bi-list" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0
+1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1
+.5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+</button>
+<ul class="menu__list hide">
+<li class="menu__item">
+<a href="index.html" class="menu__link">
+Главная
+</a>
+</li>
+<li class="menu__item">
+<a href="osebe.html" class="menu__link">
+О себе
+</a>
+</li>
+<li class="menu__item">
+<a href="portfolio.html" class="menu__link">
+Портфолио
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="info" id="info">
+<h2 class="info__title">О себе:</h2>
+<img src="./kotprogrammer2.jpg.png" class="kotik" width="500" height="500">
+<p class="info__fullname">
+<span class ="bold"> Курлова Алёна Алексеевна</span>, 18 лет
+</p>
+<p class="info__education">
+Учусь в <span class ="bold">МТУСИ</span> на направлении <br> <span class="bold">"Информатика и вычислительная техника"</span> </br>
+</p>
+<p class="info__telegram">
+Ссылка на мой <span class="bold">Telegram</span>: <a href="https://t.me/alenchha" class="info__nicknamet"> alenchha </a>
+</p>
+<p class="info__github">
+Ссылка на мой <span class="bold">GitHub</span>: <a href="https://github.com/alenchha" class="info__nicknameg"> alenchha </a>
+</p>
+</div>
+<div class="portfolio" id="portfolio">
+<button class="portfolio__btn">
+    <span class="btn__ptf">Открыть портфолио</span>
+</button>
+<div class="menu__portfolio hide">
+    <h3 class="name__lab"> Мои лабораторные работы:</h3>
+    <button class="lab1__btn">
+        <span>Лабораторная №1. Введение в Python.</span>
+    </button>
+    <div class="lab_1 hide">
+        <p class="plab_1">
+            <br> Здесь я написала программу, которая корректно находит корни </br> квадратного уравнения по трём введённым коэффициентам.
+        </p>
+        <p class="info__lab1git">
+            Ознакомиться можно на <span class="bold">GitHub</span> по следующей ссылке: <a href="https://github.com/alenchha/domashka/blob/main/lab1.py" class="info__nicknamegl1"> Лабораторная номер 1 </a>
+        </p>
+        <img src="./python1.png" width="480" height="320">
+    </div>
+    <button class="lab2__btn">
+        <span>Лабораторная №2. FastAPI.</span>
+    </button>
+    <div class="lab_2 hide">
+        <p class="plab_2">
+            <br> С помощью библиотеки FastAPI мне удалось создать простой REST сервис, </br> использующий библиотеку Wikipedia.
+        </p>
+        <p class="info__lab2git">
+            Ознакомиться можно на <span class="bold">GitHub</span> по следующей ссылке: <a href="https://github.com/alenchha/domashka/blob/main/Wiki.py" class="info__nicknamegl2"> Лабораторная номер 2 </a>
+        </p>
+        <img src="./fastapi1.png" width="480" height="320">
+        <img src="./fastapi2.png" width="250" height="150">
+        <img src="./swag1.png" width="444" height="189">
+        <img src="./swag2.png" width="444" height="189">
+    </div>
+</div>
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
